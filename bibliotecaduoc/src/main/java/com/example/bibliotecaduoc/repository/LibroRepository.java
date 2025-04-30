@@ -70,7 +70,7 @@ public class LibroRepository {
 
 
 
-    Libro Libro1 = new Libro();
+    Libro libro1 = new Libro();
     libro1.setId(id);
     libro1.setTitulo(lib.getTitulo());
     libro1.setAutor(lib.getAutor());
@@ -84,5 +84,8 @@ public class LibroRepository {
 
 
     
+
+}
+
 
 }
