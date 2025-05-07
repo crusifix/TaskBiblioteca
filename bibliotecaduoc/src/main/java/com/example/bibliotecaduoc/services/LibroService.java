@@ -13,16 +13,26 @@ public class LibroService {
     private LibroRepository libroRepository;
 
     public List<Libro> getLibros() {
-        return libroRepository.obtenerLibros();
+        return libroRepository.obtneLibros();
     }
 
     public Libro saveLibro(Libro libro) {
-        return libroRepository.guardar(libro);
+        return libroRepository.guardaLibro(libro);
     }
 
     public Libro getLibroId(int id) {
         return libroRepository.buscarPorId(id);
     }
+
+    public Libro updateLibro(Libro libro) {
+        return libroRepository.actualizar(libro);
+    }
+
+    public String deleteLibro(int id){
+        libroRepository.eliminar(id);
+        return "producto eliminado";
+    }
+
 
     
     
